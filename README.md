@@ -1,2 +1,8 @@
-# CODESMART_AI
-CodeSmart AI: A Chrome extension using FastAPI and Gemini AI to provide personalized coding problem suggestions and solutions.
+# CodeSmart AI
+
+CodeSmart AI is a Chrome extension designed to assist developers by leveraging FastAPI and Gemini AI to deliver personalized coding problem suggestions and solutions. This tool helps users improve their coding skills by offering tailored advice based on their progress, supporting languages like Python, C++, and Java, and integrating with LeetCode problem scraping for a rich learning experience. To get started, ensure you have Python 3.8+ and a Google Gemini API key. For the backend, clone the repository, create and activate a virtual environment with `python -m venv venv` followed by `.\venv\Scripts\activate`, install dependencies using `pip install -r backend/requirements.txt`, set your API key in `backend/main.py`, and run the server with `uvicorn main:app --reload` from the `backend` directory. For the frontend, navigate to `frontend/codesmart-extension`, install dependencies with `npm install`, build with `npm run build`, and load the extension in Chrome via `chrome://extensions/` under "Developer mode" by selecting the `build` folder. Usage is simple: open the extension popup, select a problem and language, and click "Get Suggestion" for personalized advice, with API endpoints like `/assist` and `/log_progress` available for programmatic access. Contributions are welcome—fork the repository, create a branch, commit changes, and submit a pull request.
+
+### Notes
+- Replace `https://github.com/REETIKAJENA025/CODESMART_AI.git` with your actual GitHub URL (or omit if not hosted).
+- Update `GOOGLE_API_KEY` in `main.py` with your Gemini API key.
+- Create a `requirements.txt` in `backend` with: `fastapi`, `uvicorn`, `requests`, `beautifulsoup4`, `google-generativeai`.
